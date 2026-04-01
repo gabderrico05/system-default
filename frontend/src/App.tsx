@@ -1,13 +1,15 @@
 import './index.css'
+import { RouterProvider } from "react-router-dom"
+import { router } from "./routes"
 
 function App() {
-
-
   return (
-   <div className='w-full h-full flex items-center justify-center bg-stone-500'> 
-      <h2 className='text-stone-700 font-bold text-5xl'>Sistema Default</h2>
-   </div>
+    <div className='w-screen h-screen bg-stone-900'>
+      <RouterProvider router={router}/>
+    </div>
+    
   )
 }
 
 export default App
+ 
